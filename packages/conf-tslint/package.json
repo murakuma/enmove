@@ -1,0 +1,12 @@
+{
+  "name": "@enmove/conf-tslint",
+  "version": "1.0.0",
+  "description": "A custom config for tslint and dependencies for additional rules.",
+  "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
+  "main": "tslint.json",
+  "dependencies": {
+    "rxjs-tslint-rules": "^4.14.3",
+    "tslint-react": "^3.6.0"
+  }
+}
