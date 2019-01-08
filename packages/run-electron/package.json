@@ -1,0 +1,21 @@
+{
+  "name": "@enmove/run-electron",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "run-bin run-s clean compile",
+    "clean": "run-bin shx rm -rf dist",
+    "compile": "run-bin tsc",
+    "lint": "run-bin tslint --project ."
+  },
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "electron": "^4.0.1",
+    "electron-reload": "^1.4.0"
+  },
+  "devDependencies": {
+    "run-bin": "^1.0.1"
+  }
+}

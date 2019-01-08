@@ -20,3 +20,15 @@ enmove forces you to use following platforms to make your products:
 - sass (for writing css)
 
 Do you want to use something else in place of any items in the list? It means, perhaps, that you will require considerable amount of efforts to smoothly adopt this module to your project. If so, you may want to completely ignore this project, or fork this repo and customize it to suits your own needs and hopefully share it with us.
+
+## Packages
+
+TODO: Write doc
+
+- Add one of `pack-*` packages to your project as dev dependency
+- `conf-*` and `run-*` are used to import the preset configs in your actual config files
+- `with-*` depend on its corresponding `conf-*` package and required dependencies to build an app or a library on the specific platform
+
+```
+pack-* -> with-* -> conf-* or run-*
+```

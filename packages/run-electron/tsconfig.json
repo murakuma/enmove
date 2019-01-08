@@ -1,0 +1,7 @@
+{
+    "extends": "@enmove/conf-ts/dom/decl",
+    "compilerOptions": {
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*"]
+}
