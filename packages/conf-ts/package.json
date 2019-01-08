@@ -1,0 +1,7 @@
+{
+  "name": "@enmove/conf-ts",
+  "version": "1.0.0",
+  "description": "A set of base configuration files for tsconfig.json",
+  "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>"
+}

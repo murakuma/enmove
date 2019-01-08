@@ -1,0 +1,7 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "lib": ["dom", "es7"],
+        "jsx": "react"
+    }
+}
