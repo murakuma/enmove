@@ -67,7 +67,7 @@ This example json file also assumes you have following directory structure:
 
 ### `conf-ts/decl`
 
-This configuration justs adds `declaration: true` to the basic configuration so it emits `.d.ts` along with transpiled `.js` files and their source maps.
+This configuration justs adds `declaration: true` to the basic configuration so it emits `.d.ts` along with transpiled `.js` files and their source maps. It also preserve comments in the code. Thus, when you publish your package as a library, the user can still see JSDocs in their code editors.
 
 **WHEN TO USE**: Use this for building a library in place of the basic config.
 
