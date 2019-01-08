@@ -22,7 +22,7 @@ Then, add your `tsconfig.json` to your project directory and extends the one of 
 }
 ```
 
-## List of configs
+## Presets
 
 conf-ts provides following configurations out of the box:
 
@@ -32,7 +32,7 @@ conf-ts provides following configurations out of the box:
 
 ### `conf-ts`
 
-The basic configuration of this module and all of other more-specific configurations in this module inherit from this, which declares common compiler settings to utilize TypeScript features.
+The most basic configuration of this module and all of other more-specific configurations in this module inherit from this, which declares common compiler settings to utilize TypeScript features.
 
 **WHEN TO USE**: Use this as the default tsconfig unless your code involves any react or DOM-related code.
 
