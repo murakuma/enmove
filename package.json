@@ -1,0 +1,11 @@
+{
+  "name": "enmove",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
+  "main": "index.js",
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  }
+}
