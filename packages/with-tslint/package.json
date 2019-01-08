@@ -1,0 +1,10 @@
+{
+  "name": "@enmove/with-tslint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@enmove/conf-tslint": "^1.0.0",
+    "tslint": "^5.12.0"
+  }
+}
