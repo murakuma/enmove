@@ -29,6 +29,7 @@ conf-ts provides following configurations out of the box:
 - `@enmove/cont-ts`
 - `@enmove/conf-ts/decl`
 - `@enmove/conf-ts/dom`
+- `@enmove/conf-ts/dom/decl`
 
 ### `conf-ts`
 
@@ -104,6 +105,12 @@ And you should want to add script to your `package.json` in order to use the tsc
 This configuration adds `dom` library so you can reference to the browser APIs, and it tells that the application uses react.
 
 **WHEN TO USE**: Your application needs react and access to the DOM.
+
+### `conf-ts/dom/decl`
+
+The dom version of `conf-ts/decl`.
+
+**WHEN TO USE**: You want to expose a library that involves use of DOM API.
 
 ## Tip: Preview your config file
 
