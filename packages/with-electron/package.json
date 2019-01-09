@@ -1,0 +1,9 @@
+{
+  "name": "@enmove/with-electron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@enmove/run-electron": "^1.0.0"
+  }
+}
