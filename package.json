@@ -6,7 +6,8 @@
   "author": "murakuma <murakuma44@gmail.com>",
   "main": "index.js",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "devDependencies": {
     "@types/node": "^10.12.18",

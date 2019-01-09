@@ -1,0 +1,27 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "run-bin run-s clean webpack",
+    "clean": "run-bin shx rm -rf dist",
+    "electron": "run-bin electron .",
+    "electron:dev": "run-bin electron index.dev.js",
+    "lint": "run-bin tslint --project .",
+    "start": "run-bin run-p webpack:dev electron:dev",
+    "webpack": "run-bin webpack --mode production",
+    "webpack:dev": "run-bin webpack-dev-server --mode development"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@enmove/for-electron": "^1.0.0",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "run-bin": "^1.0.1"
+  }
+}

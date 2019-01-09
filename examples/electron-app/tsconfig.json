@@ -1,0 +1,7 @@
+{
+    "extends": "@enmove/conf-ts/dom",
+    "include": ["src/**/*"],
+    "files": [
+        "src/index.tsx"
+    ]
+}
