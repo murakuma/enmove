@@ -1,35 +1,28 @@
 
+import { URL } from "url";
+
 import {
     app,
     BrowserWindow,
     BrowserWindowConstructorOptions,
 } from "electron";
 
-const FILE_PROTOCOL = "file://";
-function ensureFileProtocol( fileURL: string ) {
-    if ( !fileURL.startsWith( FILE_PROTOCOL ) ) {
-        return FILE_PROTOCOL + fileURL;
-    } else {
-        return fileURL;
-    }
-}
+import { waitForServer } from "./waitForServer";
 
 /**
  * Creates an electron BrowserWindow instance.
- * 
+ *
+ * If you provide a URL with http (or https) protocol, it checks if the host is
+ * available or not and ensures that the BrowserWindow is created after the host
+ * becomes available. It's handy when you are working with webpack dev server,
+ * which has noticable delay to serve the compiled files.
+ *
  * ```js
- * const { join } = require("path");
- * 
- * const DIST = join( __dirname, "dist" );
- * 
  * // Starts the electron app
  * require("@enmove/run-electron")(
  *     // The location where entry HTML file is
- *     join( DIST, index.html ),
- * 
- *     // The glob pattern to watch files for auto reloading
- *     join( DIST, "**\/*" ),
- * 
+ *     `file://${__dirname}/dist/index.html` ),
+ *
  *     // The BrowserWindow configuration
  *     {
  *         width: 1024,
@@ -37,25 +30,17 @@ function ensureFileProtocol( fileURL: string ) {
  *     }
  * );
  * ```
- * 
- * @param entryHtmlFile The location where your entry HTML file is.
- * @param watchPath The glob pattern to watch changes in the filesystem.
- * @param windowOptions The options for creating a BrowserWindow.
- * [All available options are here](https://electronjs.org/docs/api/browser-window#new-browserwindowoptions).
+ *
+ * @param entryURL The location where your entry HTML file is.
+ * @param windowOptions The options for creating a BrowserWindow. [Available
+ * options are
+ * here](https://electronjs.org/docs/api/browser-window#new-browserwindowoptions).
  */
 function runElectron(
-    entryHtmlFile: string,
-    watchPath?: string | undefined | null,
+    entryURL: string,
     windowOptions?: BrowserWindowConstructorOptions
 ) {
-    // Add `file://` prefix if missing
-    entryHtmlFile = ensureFileProtocol( entryHtmlFile );
-
-    if ( watchPath ) {
-        // Enable auto-reloading
-        const electronReload = require( "electron-reload" );
-        electronReload( watchPath );
-    }
+    const url = new URL( entryURL );
 
     let mainWindow: BrowserWindow | null;
 
@@ -66,14 +51,24 @@ function runElectron(
     } );
 
     app.on( "ready", () => {
-        mainWindow = new BrowserWindow( windowOptions );
 
-        mainWindow.loadURL( entryHtmlFile );
+        const createWindow = () => {
+            mainWindow = new BrowserWindow( windowOptions );
 
-        mainWindow.on( "closed", () => {
-            mainWindow = null;
-        } );
+            mainWindow.loadURL( entryURL );
+
+            mainWindow.on( "closed", () => {
+                mainWindow = null;
+            } );
+        };
+
+        if ( url.protocol.startsWith( "file" ) ) {
+            createWindow();
+        } else {
+            waitForServer( url, createWindow );
+        }
     } );
 }
+
 
 export default runElectron;

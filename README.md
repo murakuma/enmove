@@ -25,10 +25,10 @@ Do you want to use something else in place of any items in the list? It means, p
 
 TODO: Write doc
 
-- Add one of `pack-*` packages to your project as dev dependency
+- Add one of `for-*` packages to your project as dev dependency
 - `conf-*` and `run-*` are used to import the preset configs in your actual config files
 - `with-*` depend on its corresponding `conf-*` package and required dependencies to build an app or a library on the specific platform
 
 ```
-pack-* -> with-* -> conf-* or run-*
+for-* -> with-* -> conf-* or run-*
 ```

@@ -12,8 +12,7 @@
   },
   "dependencies": {
     "@types/electron": "^1.6.10",
-    "electron": "^4.0.1",
-    "electron-reload": "^1.4.0"
+    "electron": "^4.0.1"
   },
   "devDependencies": {
     "run-bin": "^1.0.1"
