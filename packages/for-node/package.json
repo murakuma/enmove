@@ -1,0 +1,11 @@
+{
+  "name": "@enmove/for-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@enmove/with-jest": "^1.0.0",
+    "@enmove/with-ts": "^1.0.0",
+    "@enmove/with-tslint": "^1.0.0"
+  }
+}
