@@ -6,10 +6,18 @@ import {
     generateDllEntries,
     VenderDllConfig,
 } from "./generateDllEntries";
+import {
+    Mode,
+    Target,
+} from "./types";
 
-interface Config {
+export interface Config {
     vendor: VenderDllConfig;
-    hot: boolean;
+    target?: Target;
+}
+
+interface Argv {
+    mode: Mode;
 }
 
 /**
@@ -32,14 +40,19 @@ function generateWebpackConfig( rootDir: string, config: Partial<Config> = {} ) 
     const dllEntries = generateDllEntries( rootDir, config.vendor );
 
     // Other configs
-    const { hot } = config;
+    const { target } = config;
 
-    // Generate the config
-    return generate( {
-        rootDir,
-        dllEntries,
-        hot,
-    } );
+    // Returns a function to detect the webpack mode
+    return ( env: any, argv: Argv ) => {
+        const isDev = argv.mode === "development";
+
+        return generate( {
+            rootDir,
+            target,
+            dllEntries,
+            isDev,
+        } );
+    };
 }
 
 export default generateWebpackConfig;

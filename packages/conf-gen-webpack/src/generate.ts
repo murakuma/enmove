@@ -8,15 +8,21 @@ import DotenvPlugin from "dotenv-webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
-export const generate = ({
+import compact from "lodash.compact";
+
+import { Target } from "./types";
+
+export const generate = ( {
     rootDir,
+    target,
     dllEntries,
-    hot,
+    isDev,
 }: {
     rootDir: string,
+    target: Target,
     dllEntries: { [key: string]: ReadonlyArray<string> },
-    hot?: boolean
-}): webpack.Configuration => ({
+    isDev: boolean,
+} ): webpack.Configuration => ({
 
     context: rootDir,
     entry: "./src/index.tsx",
@@ -26,6 +32,8 @@ export const generate = ({
         path: resolve( rootDir, "dist" ),
         publicPath: "./",
     },
+
+    target,
 
     resolve: {
         extensions: [ ".js", ".json", ".ts", ".tsx" ],
@@ -43,15 +51,15 @@ export const generate = ({
             } ],
         }, {
             test: /\.css$/,
-            use: [
-                "css-hot-loader",
+            use: compact( [
+                isDev && "css-hot-loader",
                 MiniCssExtractPlugin.loader,
                 "css-loader",
-            ],
+            ] ),
         }, {
             test: /\.(sa|sc)ss$/,
-            use: [
-                "css-hot-loader",
+            use: compact( [
+                isDev && "css-hot-loader",
                 MiniCssExtractPlugin.loader,
                 {
                     loader: "typings-for-css-modules-loader",
@@ -65,11 +73,11 @@ export const generate = ({
                     },
                 },
                 "sass-loader",
-            ],
+            ] ),
         } ],
     },
 
-    plugins: [
+    plugins: compact( [
         new DotenvPlugin(),
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin( {
@@ -82,20 +90,18 @@ export const generate = ({
             filename: "[name].js",
             entry: dllEntries,
         } ),
-        ...( hot ? [
-            new webpack.HotModuleReplacementPlugin(),
-        ] : []),
-    ],
+        isDev && new webpack.HotModuleReplacementPlugin(),
+    ] ),
 
-    devServer: {
+    devServer: isDev ? {
         contentBase: [
             resolve( rootDir, "static" ),
             resolve( rootDir, "dist" ),
         ],
         historyApiFallback: true,
-        hot,
+        hot: true,
         stats: "minimal",
-    },
+    } : undefined,
 
-    devtool: "source-map",
+    devtool: isDev ? "source-map" : undefined,
 });
