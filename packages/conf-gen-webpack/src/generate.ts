@@ -30,7 +30,9 @@ export const generate = ( {
     output: {
         filename: "bundle.js",
         path: resolve( rootDir, "dist" ),
-        publicPath: "./",
+
+        // Disable this option is webpack-dev-server is used
+        publicPath: isDev ? undefined : "./",
     },
 
     target,
