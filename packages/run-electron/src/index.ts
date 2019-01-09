@@ -70,5 +70,4 @@ function runElectron(
     } );
 }
 
-
-export default runElectron;
+module.exports = runElectron;

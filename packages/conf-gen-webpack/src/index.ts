@@ -55,4 +55,4 @@ function generateWebpackConfig( rootDir: string, config: Partial<Config> = {} ) 
     };
 }
 
-export default generateWebpackConfig;
+module.exports = generateWebpackConfig;
