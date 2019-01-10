@@ -1,11 +1,15 @@
 {
   "name": "@enmove/for-node",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A set of tools to develop a node app or a library.",
   "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
     "@enmove/with-jest": "^1.0.0",
     "@enmove/with-ts": "^1.0.0",
     "@enmove/with-tslint": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

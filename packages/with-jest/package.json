@@ -1,12 +1,16 @@
 {
   "name": "@enmove/with-jest",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A set of dependencies related to jest.",
   "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
     "@enmove/conf-jest": "^1.0.0",
     "@types/jest": "^23.3.12",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

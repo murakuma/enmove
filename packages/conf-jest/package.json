@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A set of configuration files for jest.",
   "main": "index.js",
-  "author": "murakuma <murakuma44@gmail.com>",
   "license": "MIT",
-  "dependencies": {}
+  "author": "murakuma <murakuma44@gmail.com>",
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }

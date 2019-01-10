@@ -1,10 +1,14 @@
 {
   "name": "@enmove/for-electron",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A set of tools to develop an electron app.",
   "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
     "@enmove/for-web": "^1.0.0",
     "@enmove/with-electron": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

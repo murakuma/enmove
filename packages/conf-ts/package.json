@@ -1,7 +1,10 @@
 {
   "name": "@enmove/conf-ts",
   "version": "1.0.0",
-  "description": "A set of base configuration files for tsconfig.json",
+  "description": "A set of base configuration files for TypeScript.",
   "license": "MIT",
-  "author": "murakuma <murakuma44@gmail.com>"
+  "author": "murakuma <murakuma44@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  }
 }

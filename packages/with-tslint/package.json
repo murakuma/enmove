@@ -1,10 +1,14 @@
 {
   "name": "@enmove/with-tslint",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A set of dependencies related to TSLint.",
   "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
     "@enmove/conf-tslint": "^1.0.0",
     "tslint": "^5.12.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

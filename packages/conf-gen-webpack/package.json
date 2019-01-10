@@ -1,7 +1,12 @@
 {
   "name": "@enmove/conf-gen-webpack",
   "version": "1.0.0",
+  "description": "A webpack configuration generator for web and electron applications.",
   "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
+  "files": [
+    "dist/"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -38,5 +43,8 @@
     "@types/webpack-dev-server": "^3.1.1",
     "run-bin": "^1.0.1",
     "typescript": "^3.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

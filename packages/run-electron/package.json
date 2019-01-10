@@ -1,7 +1,12 @@
 {
   "name": "@enmove/run-electron",
   "version": "1.0.0",
+  "description": "A utility function to create a simple BrowserWindow in electron.",
   "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
+  "files": [
+    "dist/"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -16,5 +21,8 @@
   },
   "devDependencies": {
     "run-bin": "^1.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
