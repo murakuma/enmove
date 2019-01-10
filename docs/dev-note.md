@@ -15,7 +15,7 @@ Before you publish the newer version of the packages, make sure that following a
     - If any contents of the package are transpiled code (from TypeScript), explicitly set this field so contents under `dist/` will be properly published to npm and we can prevent `src` files from being unneccesarily published.
 - **`publishConfig`**
     - As it will be released as a scoped package, you need to explicitly set `publishConfig.access` to `"public"`.
-- plus, `description`, and `author`
+- plus, `description`, `repository`, and `author`
 
 > **NOTE**:
 > Always set `"private": true` on those projects that are never be published on the package registry (npm), for instance, example packages.

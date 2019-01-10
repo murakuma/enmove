@@ -2,6 +2,10 @@
   "name": "@enmove/for-node",
   "version": "1.0.0-alpha.0",
   "description": "A set of tools to develop a node app or a library.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murakuma/enmove"
+  },
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {

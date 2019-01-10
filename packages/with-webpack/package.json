@@ -2,6 +2,10 @@
   "name": "@enmove/with-webpack",
   "version": "1.0.0-alpha.0",
   "description": "A set of dependencies related to webpack.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murakuma/enmove"
+  },
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {

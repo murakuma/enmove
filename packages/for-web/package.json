@@ -2,6 +2,10 @@
   "name": "@enmove/for-web",
   "version": "1.0.0-alpha.0",
   "description": "A set of tools to develop a web app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murakuma/enmove"
+  },
   "license": "MIT",
   "dependencies": {
     "@enmove/for-node": "^1.0.0-alpha.0",
