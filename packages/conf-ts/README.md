@@ -1,5 +1,7 @@
 
-# @enmove/conf-ts
+# `@enmove/conf-ts`
+
+> A set of base configuration files for TypeScript.
 
 conf-ts provides several types of base configuration files to inherit from your `tsconfig.json`.
 
@@ -110,7 +112,7 @@ This configuration adds `dom` library so you can reference to the browser APIs, 
 
 The dom version of `conf-ts/decl`.
 
-**WHEN TO USE**: You want to expose a library that involves use of DOM API.
+**WHEN TO USE**: You want to expose a library that needs react and use of DOM API.
 
 ## Tip: Preview your config file
 
@@ -134,3 +136,11 @@ $ tsc --showConfig
     ]
 }
 ```
+
+## Additional info
+
+This package is included in:
+
+- [`for-electron`](../for-electron#readme)
+- [`for-node`](../for-node#readme)
+- [`for-web`](../for-web#readme)

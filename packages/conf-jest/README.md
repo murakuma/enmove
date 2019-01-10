@@ -1,5 +1,7 @@
 
-# @enmove/conf-jest
+# `@enmove/conf-jest`
+
+> A set of configuration files for jest.
 
 conf-jest provides several types of jest configuration module from which your actual jest configration imports.
 
@@ -50,3 +52,11 @@ You can use `--config` option to tell jest that which jest config file should be
 ```sh
 $ jest --config jest.integration.js
 ```
+
+## Additional info
+
+This package is included in:
+
+- [`for-electron`](../for-electron#readme)
+- [`for-node`](../for-node#readme)
+- [`for-web`](../for-web#readme)

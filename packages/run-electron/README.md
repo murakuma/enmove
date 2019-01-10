@@ -1,11 +1,13 @@
 
-# @enmove/run-electron
+# `@enmove/run-electron`
+
+> A utility function to create a simple BrowserWindow in electron.
 
 A simple helper to run an electron **main** process.
 
 ## Usage
 
-Firstly create a `.js` file for an electron *main* process, for example, `index.js` or `start-electron.js`. This file will be invoked as you runs electron CLI like following:
+Firstly, create a `.js` file for an electron *main* process, for example, `index.js` or `start-electron.js`. This file will be invoked as you runs electron CLI like following:
 
 ```sh
 # dot (.) for `index.js`
@@ -74,3 +76,10 @@ require("@enmove/run-electron")(
 
 - [BrowserWindow | Electron](https://electronjs.org/docs/api/browser-window)
 - [Building an Electron application with create-react-app](https://medium.freecodecamp.org/building-an-electron-application-with-create-react-app-97945861647c)
+
+
+## Additional info
+
+This package is included in:
+
+- [`for-electron`](../for-electron#readme)
