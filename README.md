@@ -1,7 +1,7 @@
 
 # enmove
 
-> A opinionated boilerplate to develop a node/web/electron app in TypeScript.
+> An opinionated boilerplate to develop a node/web/electron app in TypeScript.
 
 
 ## Motivation
@@ -29,7 +29,7 @@ Do you want to use something else in place of any items in the list? It means, p
 
 ## Usage
 
-To work with enmove, you need to know which target platform you may want to use. Then, choose the corresponding **hub package** from enmove packages. A hub package contains a handful number of dependencies, which is required to build your application along with enmove. So, just adding a one package to your project is enough to kick starting your new journey.
+To work with enmove, you need to know which target platform you may want to use. Then, choose the corresponding **hub package** from enmove packages. A hub package contains a handful dependencies, which is required to build your application along with enmove. So, just adding a one package to your project is enough to kick starting your new journey.
 
 Currently, enmove provides following hub packages:
 
