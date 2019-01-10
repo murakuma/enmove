@@ -1,11 +1,10 @@
 {
   "name": "@enmove/conf-jest",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A set of configuration files for jest.",
   "main": "index.js",
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
   }

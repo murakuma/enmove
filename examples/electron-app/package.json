@@ -1,6 +1,6 @@
 {
   "name": "electron-app",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "private": true,
   "license": "MIT",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "@enmove/for-electron": "^1.0.0",
+    "@enmove/for-electron": "^1.0.0-alpha.0",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "run-bin": "^1.0.1"

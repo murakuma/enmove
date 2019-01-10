@@ -1,6 +1,6 @@
 {
   "name": "@enmove/conf-tslint",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A custom config for tslint and dependencies for additional rules.",
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",

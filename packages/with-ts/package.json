@@ -1,11 +1,11 @@
 {
   "name": "@enmove/with-ts",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A set of dependencies related to TypeScript.",
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
-    "@enmove/conf-ts": "^1.0.0",
+    "@enmove/conf-ts": "^1.0.0-alpha.0",
     "typescript": "^3.2.2"
   },
   "publishConfig": {

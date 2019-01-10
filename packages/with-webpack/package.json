@@ -1,11 +1,11 @@
 {
   "name": "@enmove/with-webpack",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A set of dependencies related to webpack.",
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
-    "@enmove/conf-gen-webpack": "^1.0.0",
+    "@enmove/conf-gen-webpack": "^1.0.0-alpha.0",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },

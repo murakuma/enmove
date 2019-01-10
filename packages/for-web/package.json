@@ -1,12 +1,12 @@
 {
   "name": "@enmove/for-web",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A set of tools to develop a web app.",
   "license": "MIT",
   "dependencies": {
-    "@enmove/for-node": "^1.0.0",
-    "@enmove/with-jest-enzyme": "^1.0.0",
-    "@enmove/with-webpack": "^1.0.0"
+    "@enmove/for-node": "^1.0.0-alpha.0",
+    "@enmove/with-jest-enzyme": "^1.0.0-alpha.0",
+    "@enmove/with-webpack": "^1.0.0-alpha.0"
   },
   "publishConfig": {
     "access": "public"

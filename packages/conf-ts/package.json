@@ -1,6 +1,6 @@
 {
   "name": "@enmove/conf-ts",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A set of base configuration files for TypeScript.",
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
