@@ -68,8 +68,8 @@ Some of the attributes in the webpack config may change in response to [the webp
 // In package.json
 {
     "scripts": {
-        "webpack": "run-bin webpack --mode production",
-        "webpack:dev": "run-bin webpack-dev-server --mode development"
+        "webpack": "webpack --mode production",
+        "webpack:dev": "webpack-dev-server --mode development"
     }
 }
 ```
@@ -93,10 +93,10 @@ Since it returns a webpack config object, you can customize it by modifying the 
 ```js
 const config = require("@enmove/conf-webpack/web");
 
-// Modify the config in your own way
+// Modify the config
 config.devtool = "eval";
 
-// Don't forget exporting the config object
+// Don't forget exporting the config
 module.exports = config;
 ```
 
@@ -117,7 +117,7 @@ module.exports = generateWebpackConfig({
 
 ## API
 
-### List of preset configs
+### Presets
 
 `@enmove/conf-webpack` provides following presets:
 
@@ -128,18 +128,19 @@ module.exports = generateWebpackConfig({
 - `@enmove/conf-webpack/electron/prod`
 - `@enmove/conf-webpack/electron/dev`
 
+In addition, `@enmove/conf-webpack` exports the webpack config builder called `generateWebpackConfig` function.
 
-### `getWebpackConf(config?)`
+### `generateWebpackConfig(config?)`
 
 Returns a webpack configuration object.
 
 ```ts
-getWebpackConf(config?: Config) => WebpackConfiguration;
+generateWebpackConfig(config?: Config) => WebpackConfiguration;
 ```
 
 Use this function rather than preset configurations to tweak the generated config object for your needs.
 
-All of the attributes in `config` are **optional**. 
+All of the attributes in `config` are **optional**.
 
 | Key              | Type                          | Default                      | Description                                                   |
 |------------------|-------------------------------|------------------------------|---------------------------------------------------------------|
