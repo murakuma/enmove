@@ -71,10 +71,10 @@ And here's the complete list of packages that published by this project:
     - [`@enmove/with-tslint`](./packages/with-tslint#readme)
     - [`@enmove/with-webpack`](./packages/with-webpack#readme)
 - Leaf packages
-    - [`@enmove/conf-gen-webpack`](./packages/conf-gen-webpack#readme)
     - [`@enmove/conf-jest`](./packages/conf-jest#readme)
     - [`@enmove/conf-ts`](./packages/conf-ts#readme)
     - [`@enmove/conf-tslint`](./packages/conf-tslint#readme)
+    - [`@enmove/conf-webpack`](./packages/conf-webpack#readme)
     - [`@enmove/run-electron`](./packages/run-electron#readme)
 
 Let's take a closer look at each level.

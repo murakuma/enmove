@@ -1,4 +1,4 @@
 
-module.exports = require("@enmove/conf-gen-webpack")(__dirname, {
+module.exports = require("@enmove/conf-webpack")(__dirname, {
     target: "electron-renderer"
 })

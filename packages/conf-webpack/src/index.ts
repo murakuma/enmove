@@ -25,7 +25,7 @@ interface Argv {
  * 
  * ```ts
  * // In `webpack.config.js`
- * module.exports = require("@enmove/conf-gen-webpack")(__dirname);
+ * module.exports = require("@enmove/conf-webpack")(__dirname);
  * ```
  * 
  * @param rootDir The project root directory.
