@@ -9,7 +9,9 @@
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "files": [
-    "dist/"
+    "dist/",
+    "electron/",
+    "web/"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,6 +31,7 @@
     "lodash.difference": "^4.5.0",
     "lodash.keys": "^4.2.0",
     "mini-css-extract-plugin": "^0.5.0",
+    "minimist": "^1.2.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
@@ -43,6 +46,7 @@
     "@types/lodash.difference": "^4.5.4",
     "@types/lodash.keys": "^4.2.4",
     "@types/mini-css-extract-plugin": "^0.2.0",
+    "@types/minimist": "^1.2.0",
     "@types/webpack": "^4.4.22",
     "@types/webpack-dev-server": "^3.1.1",
     "run-bin": "^1.0.1",

@@ -6,18 +6,35 @@ import {
     generateDllEntries,
     VenderDllConfig,
 } from "./generateDllEntries";
-import {
-    Mode,
-    Target,
-} from "./types";
+import { isDev as getIsDev } from "./isDev";
+import { Target } from "./types";
 
 export interface Config {
-    vendor: VenderDllConfig;
-    target?: Target;
-}
+    /**
+     * The root directory.
+     * @default process.cwd()
+     */
+    rootDir: string;
 
-interface Argv {
-    mode: Mode;
+    /**
+     * Determine if the webpack mode is `"development"`.
+     *
+     * Specify if you want to override the mode to generate webpakc
+     * configuration. If it is not supplied, it uses `process.argv` to detect
+     * the current webpack mode.
+     */
+    isDev: boolean;
+
+    /**
+     * The build target.
+     * @default "web"
+     */
+    target: Target;
+
+    /**
+     * The list of modules to include to or exclude from `vendor.js` bundle.
+     */
+    vendor: VenderDllConfig;
 }
 
 /**
@@ -25,16 +42,17 @@ interface Argv {
  * 
  * ```ts
  * // In `webpack.config.js`
- * module.exports = require("@enmove/conf-webpack")(__dirname);
+ * module.exports = require("@enmove/conf-webpack")({ ...config });
  * ```
  * 
- * @param rootDir The project root directory.
  * @param config The configuration object to customize the output.
  */
-function generateWebpackConfig( rootDir: string, config: Partial<Config> = {} ) {
+function generateWebpackConfig( config: Partial<Config> = {} ) {
 
-    // Make it an absolute path
-    rootDir = resolve( rootDir );
+    const rootDir = resolve( config.rootDir ? config.rootDir : process.cwd() );
+    const isDev = config.isDev !== undefined ? config.isDev : getIsDev();
+
+    console.log( `[@enmove/conf-webpack] development mode is ${isDev ? "ON" : "OFF"}` );
 
     // Generate dll entries
     const dllEntries = generateDllEntries( rootDir, config.vendor );
@@ -42,17 +60,13 @@ function generateWebpackConfig( rootDir: string, config: Partial<Config> = {} ) 
     // Other configs
     const { target } = config;
 
-    // Returns a function to detect the webpack mode
-    return ( env: any, argv: Argv ) => {
-        const isDev = argv.mode === "development";
-
-        return generate( {
-            rootDir,
-            target,
-            dllEntries,
-            isDev,
-        } );
-    };
+    // Returns a webpack configuration object
+    return generate( {
+        rootDir,
+        target,
+        dllEntries,
+        isDev,
+    } );
 }
 
 module.exports = generateWebpackConfig;
