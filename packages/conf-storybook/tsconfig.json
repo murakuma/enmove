@@ -1,0 +1,7 @@
+{
+    "extends": "@enmove/conf-ts",
+    "include": [
+        "src/**/*",
+        "configure.ts"
+    ]
+}

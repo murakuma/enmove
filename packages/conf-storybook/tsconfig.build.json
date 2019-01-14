@@ -1,0 +1,8 @@
+{
+    "extends": "@enmove/conf-ts/decl",
+    "compilerOptions": {
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["**/__*__"]
+}

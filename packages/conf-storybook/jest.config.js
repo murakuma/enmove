@@ -1,0 +1,1 @@
+module.exports = require("@enmove/conf-jest");

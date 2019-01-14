@@ -1,0 +1,3 @@
+{
+    "extends": "@enmove/conf-tslint"
+}
