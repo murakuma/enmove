@@ -1,6 +1,6 @@
 {
   "name": "@enmove/with-jest",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "A set of dependencies related to jest.",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
-    "@enmove/conf-jest": "^1.0.0-alpha.0",
+    "@enmove/conf-jest": "^1.0.0-alpha.1",
     "@types/jest": "^23.3.12",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.5"

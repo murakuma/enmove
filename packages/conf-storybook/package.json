@@ -1,6 +1,6 @@
 {
   "name": "@enmove/conf-storybook",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "A set of configuration files for storybook.",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "test": "run-bin jest"
   },
   "dependencies": {
-    "@enmove/conf-webpack": "^1.0.0-alpha.0",
+    "@enmove/conf-webpack": "^1.0.0-alpha.1",
     "@storybook/addon-info": "^4.1.6",
     "@storybook/react": "^4.1.6",
     "@types/storybook__react": "^4.0.0",
