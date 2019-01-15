@@ -1,0 +1,17 @@
+{
+  "name": "@enmove/with-storybook",
+  "version": "1.0.0-alpha.0",
+  "description": "A set of dependencies related to storybook.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murakuma/enmove"
+  },
+  "license": "MIT",
+  "author": "murakuma <murakuma44@gmail.com>",
+  "dependencies": {
+    "@enmove/conf-storybook": "^1.0.0-alpha.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

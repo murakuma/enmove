@@ -10,6 +10,7 @@
   "dependencies": {
     "@enmove/for-node": "^1.0.0-alpha.0",
     "@enmove/with-jest-enzyme": "^1.0.0-alpha.0",
+    "@enmove/with-storybook": "^1.0.0-alpha.0",
     "@enmove/with-webpack": "^1.0.0-alpha.0"
   },
   "publishConfig": {
