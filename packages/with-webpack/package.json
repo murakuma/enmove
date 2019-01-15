@@ -10,11 +10,9 @@
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
     "@enmove/conf-webpack": "^1.0.0-alpha.0",
+    "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
-  },
-  "devDependencies": {
-    "webpack": "^4.28.1"
   },
   "publishConfig": {
     "access": "public"

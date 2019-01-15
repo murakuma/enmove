@@ -14,7 +14,7 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1"
   },
-  "devDependencies": {
+  "optionalDependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
