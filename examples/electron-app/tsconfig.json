@@ -1,6 +1,10 @@
 {
     "extends": "@enmove/conf-ts/dom",
-    "include": ["src/**/*"],
+    "include": [
+        "src/**/*",
+        "stories/**/*",
+        ".storybook/*"
+    ],
     "files": [
         "src/index.tsx"
     ]

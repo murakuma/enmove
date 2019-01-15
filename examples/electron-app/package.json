@@ -11,6 +11,7 @@
     "electron:dev": "run-bin electron index.dev.js",
     "lint": "run-bin tslint --project .",
     "start": "run-bin run-p webpack:dev electron:dev",
+    "storybook": "run-bin start-storybook -s ./static -p 9001",
     "webpack": "run-bin webpack --mode=production",
     "webpack:dev": "run-bin webpack-dev-server --mode=development"
   },
