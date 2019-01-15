@@ -10,10 +10,10 @@
   "author": "murakuma <murakuma44@gmail.com>",
   "files": [
     "dist/",
-    "configure.ts",
     "webpack.js"
   ],
-  "main": "configure.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "run-bin run-s clean compile",
     "clean": "run-bin shx rm -rf dist",

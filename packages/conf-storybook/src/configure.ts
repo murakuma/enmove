@@ -17,12 +17,10 @@ type WebpackRequireContext = ReturnType<typeof require.context>;
  * @param req The webpack require context object of stories.
  * @param mod The module object.
  */
-function configure( req: WebpackRequireContext, mod: Module ) {
+export function configure( req: WebpackRequireContext, mod: Module ) {
     const loadStories = () => {
         req.keys().forEach( req );
     };
 
     sbConfigure( loadStories, mod );
 }
-
-export default configure;
