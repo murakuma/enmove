@@ -14,15 +14,20 @@ However, it gives a challenge that you have to choose the correct frameworks you
 
 enmove forces you to choose from following tools and libraries to make your product:
 
-- **TypeScript**
-- react
-- jest (for testing)
-- dtslint (for type testing)
-- enzyme (for react testing)
-- tslint (for linting)
-- webpack (for bundling and web applications)
-- electron (for desktop app)
-- sass (for writing css)
+- Core
+    - **TypeScript**
+    - React
+    - SASS
+- Testing
+    - Jest
+    - dtslint (for type testing)
+    - Enzyme (for react testing)
+    - Storybook (for previewing components)
+- Linter
+    - TSLint
+- Build system
+    - Webpack (for bundling and web applications)
+    - Electron (for desktop app)
 
 Do you want to use something else in place of any items in the list? It means, perhaps, that you will require considerable amount of efforts to smoothly adopt this module to your project. If so, you may want to completely ignore this project, or fork this repo and customize it to suits your own needs and hopefully share it with us.
 
@@ -67,11 +72,13 @@ And here's the complete list of packages that published by this project:
     - [`@enmove/with-electron`](./packages/with-electron#readme)
     - [`@enmove/with-jest`](./packages/with-jest#readme)
     - [`@enmove/with-jest-enzyme`](./packages/with-jest-enzyme#readme)
+    - [`@enmove/with-storybook`](./packages/with-storybook#readme)
     - [`@enmove/with-ts`](./packages/with-ts#readme)
     - [`@enmove/with-tslint`](./packages/with-tslint#readme)
     - [`@enmove/with-webpack`](./packages/with-webpack#readme)
 - Leaf packages
     - [`@enmove/conf-jest`](./packages/conf-jest#readme)
+    - [`@enmove/conf-storybook`](./packages/conf-storybook#readme)
     - [`@enmove/conf-ts`](./packages/conf-ts#readme)
     - [`@enmove/conf-tslint`](./packages/conf-tslint#readme)
     - [`@enmove/conf-webpack`](./packages/conf-webpack#readme)
