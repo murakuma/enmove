@@ -1,6 +1,6 @@
 {
   "name": "@enmove/conf-ts",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "A set of base configuration files for TypeScript.",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@enmove/for-electron",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "A set of tools to develop an electron app.",
   "repository": {
     "type": "git",
@@ -9,8 +9,8 @@
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
-    "@enmove/for-web": "^1.0.0-alpha.1",
-    "@enmove/with-electron": "^1.0.0-alpha.1"
+    "@enmove/for-web": "^1.0.0-alpha.2",
+    "@enmove/with-electron": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"
