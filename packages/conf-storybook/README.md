@@ -67,6 +67,21 @@ function loadStories() {
 configure(loadStories, module);
 ```
 
+#### `require.context`
+
+With webpack, you can use `require.context` method to create a context that contains multiple files matched with the given conditions.
+
+```ts
+require.context(directory[, useSubdirectories, regExp])
+```
+
+This is definitely useful when it comes to collect source files for stories.
+
+> **NOTE**:
+> The first argument must be a literal string like `"./test"`, or `../stories`, and not a dynamic string like `process.cwd()`, which confuse webpack to determine where the files imported live in.
+
+See also [webpack's documentation](https://webpack.js.org/guides/dependency-management/#require-context) about this topic.
+
 ### Serving static files
 
 If you want to import your static assets from `static` directory, add `-s ./static` argument to your npm script that runs storybook:
