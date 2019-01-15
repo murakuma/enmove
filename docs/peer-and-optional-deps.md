@@ -122,3 +122,4 @@ Please note that there are three type of optional dependencies in enmove package
 | `conf-tslint`      | `tslint`<br/>`typescript`  |                         | `rxjs`                                               |
 | `conf-webpack`     | `typescript`<br/>`webpack` |                         |                                                      |
 | `with-jest-enzyme` |                            | `react`<br/>`react-dom` |                                                      |
+| `with-tslint`      | `typescript`               |                         |                                                      |
