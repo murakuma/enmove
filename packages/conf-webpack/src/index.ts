@@ -69,4 +69,5 @@ function generateWebpackConfig( config: Partial<Config> = {} ) {
     } );
 }
 
-module.exports = generateWebpackConfig;
+exports = module.exports = generateWebpackConfig;
+export default generateWebpackConfig;

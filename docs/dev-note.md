@@ -19,3 +19,96 @@ Before you publish the newer version of the packages, make sure that following a
 
 > **NOTE**:
 > Always set `"private": true` on those projects that are never be published on the package registry (npm), for instance, example packages.
+
+## Export a function as the default export
+
+When you want to export a function as the default export of your module, you may export it by using `export default`:
+
+```ts
+function foo(bar, baz) {
+    // ...
+}
+
+export default foo;
+```
+
+However, it might be problematic when it comes to be imported via `require()`:
+
+```ts
+// WRONG
+const foo = require("foo");  // foo == { default: Function }
+
+// CORRECT
+const foo = require("foo").default;
+```
+
+To make it easier to use those modules that might be **directly imported via `require`**, we recommend to export them with **two-step export**:
+
+```ts
+function foo(bar, baz) {
+    // ...
+}
+
+exports = module.exports = foo;
+export default foo;
+```
+
+> **WARNING**:
+> `exports = module.exports = foo;` must be written prior to `export default foo`.
+
+It enables users to:
+
+- import the function from a legacy javascript (ES5) code via `require`
+- import the function from TypeScript (or ES6) via `import` with proper type declaration
+
+```ts
+// In ES5
+const foo = require("foo");
+
+// In modern JS (ES6 or later) or TypeScript
+import foo from "foo";
+```
+
+### How it works
+
+This two steps default export technique can be broken down into three ideas:
+
+- Ensure that both `exports` and `module.exports` have the same object
+    - `exports === module.exports`
+- Assign `foo` as the `exports` object of the module
+    - `module.exports = foo`
+- Assign `default` member of the export object, and exports the type definition in TypeScript
+    - `export default foo;`
+
+#### `exports = module.exports = foo`
+
+It ensures that the object that assigned to `module.exports` is also assigned to `exports`. It is crucial because `export default foo;` in TypeScript will be transpiled to `exports.default = foo`, not `module.exports.default = foo;`
+
+#### `module.exports = foo;`
+
+It exports the `foo` function itself as the export object. Therefore, `require("foo")` returns exactly the `foo` function.
+
+If you can assure that the module will be imported from TypeScriot or ES6 via `import`, which has an ability to import default exports by nature, there's no need to write `module.exports = foo` at all.
+
+#### `default export foo;`
+
+The main reason of necessity of this line is that we should export the type declaration for `foo` function as well.
+
+#### The transpiled code
+
+The example above should be transpiled by TypeScript like this:
+
+```ts
+// In foo.js
+function foo(bar, baz) {
+    // ...
+}
+export = module.exports = foo;
+exports.default = foo;
+```
+
+```ts
+// In foo.d.ts
+declare function foo(bar: string, baz: number): void;
+export default foo;
+```
