@@ -91,9 +91,16 @@ export const generate = ( {
             inject: true,
             filename: "[name].js",
             entry: dllEntries,
-            inherit: ({ devtool }) => ({
+            debug: true,
+            inherit: ({
+                context,
+                devtool,
+                mode,
+            }) => ({
+                context,
                 target,
                 devtool,
+                mode,
             }),
         } ),
         isDev && new webpack.HotModuleReplacementPlugin(),

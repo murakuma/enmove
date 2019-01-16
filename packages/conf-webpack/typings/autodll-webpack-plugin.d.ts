@@ -1,6 +1,6 @@
 
 /**
- * @see https://github.com/asfktz/autodll-webpack-plugin
+ * @see https://github.com/asfktz/autodll-webpack-plugin#options
  */
 declare module "autodll-webpack-plugin" {
 
@@ -13,6 +13,7 @@ declare module "autodll-webpack-plugin" {
         inject?: boolean;
         filename?: string;
         entry?: { [key: string]: ReadonlyArray<string> };
+        debug?: boolean;
         inherit?: string | (( config: Configuration ) => Configuration);
     }
 
