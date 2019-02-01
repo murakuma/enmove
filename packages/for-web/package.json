@@ -1,6 +1,6 @@
 {
   "name": "@enmove/for-web",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "A set of tools to develop a web app.",
   "repository": {
     "type": "git",
@@ -8,10 +8,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@enmove/for-node": "^1.0.0-alpha.2",
-    "@enmove/with-jest-enzyme": "^1.0.0-alpha.2",
-    "@enmove/with-storybook": "^1.0.0-alpha.2",
-    "@enmove/with-webpack": "^1.0.0-alpha.2"
+    "@enmove/for-node": "^1.0.0-alpha.3",
+    "@enmove/with-jest-enzyme": "^1.0.0-alpha.3",
+    "@enmove/with-storybook": "^1.0.0-alpha.3",
+    "@enmove/with-webpack": "^1.0.0-alpha.3"
   },
   "publishConfig": {
     "access": "public"

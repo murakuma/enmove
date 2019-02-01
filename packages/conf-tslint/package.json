@@ -1,6 +1,6 @@
 {
   "name": "@enmove/conf-tslint",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "A custom config for tslint and dependencies for additional rules.",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@enmove/with-tslint",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "A set of dependencies related to TSLint.",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
-    "@enmove/conf-tslint": "^1.0.0-alpha.2",
+    "@enmove/conf-tslint": "^1.0.0-alpha.3",
     "dtslint": "^0.4.2",
     "tslint": "^5.12.1"
   },

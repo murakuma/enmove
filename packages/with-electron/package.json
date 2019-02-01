@@ -1,6 +1,6 @@
 {
   "name": "@enmove/with-electron",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "A set of dependencies related to electron.",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
-    "@enmove/run-electron": "^1.0.0-alpha.2"
+    "@enmove/run-electron": "^1.0.0-alpha.3"
   },
   "publishConfig": {
     "access": "public"

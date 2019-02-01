@@ -1,6 +1,6 @@
 {
   "name": "@enmove/run-electron",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "A utility function to create a simple BrowserWindow in electron.",
   "repository": {
     "type": "git",

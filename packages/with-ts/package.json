@@ -1,6 +1,6 @@
 {
   "name": "@enmove/with-ts",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "A set of dependencies related to TypeScript.",
   "repository": {
     "type": "git",
