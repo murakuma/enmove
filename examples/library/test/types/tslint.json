@@ -1,0 +1,7 @@
+{
+    "extends": "dtslint/dtslint.json",
+    "rules": {
+        "space-within-parens": false,
+        "trim-file": false
+    }
+}

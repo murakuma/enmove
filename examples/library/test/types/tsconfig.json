@@ -1,0 +1,13 @@
+{
+    "extends": "@enmove/conf-ts",
+    "compilerOptions": {
+        "lib": ["es7"],
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        
+        "baseUrl": "../../",
+        "paths": { "@src/*": ["src/*"] }
+    }
+}

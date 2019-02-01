@@ -1,0 +1,23 @@
+{
+  "name": "library",
+  "version": "1.0.0-alpha.2",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "run-bin run-s clean compile",
+    "clean": "run-bin shx rm -rf dist",
+    "compile": "run-bin tsc --project tsconfig.build.json",
+    "lint": "run-bin tslint --project .",
+    "test": "run-bin run-s test:unit test:integration test:types",
+    "test:integration": "run-bin jest --config jest.integration.js",
+    "test:types": "run-bin dtslint ./test/types --onlyTestTsNext",
+    "test:unit": "run-bin jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@enmove/for-node": "^1.0.0-alpha.2",
+    "run-bin": "^1.0.1"
+  }
+}

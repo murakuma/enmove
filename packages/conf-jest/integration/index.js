@@ -6,6 +6,10 @@ module.exports = {
 
     roots: ["<rootDir>/test/integration/"],
 
+    moduleNameMapper: {
+        "@src/(.*)": "<rootDir>/src/$1",
+    },
+
     // Override
     testMatch: [
         "**/*.test.+(ts|tsx|js)"

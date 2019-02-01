@@ -1,0 +1,15 @@
+{
+    "extends": "@enmove/conf-ts",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": { "@src/*": ["src/*"] }
+    },
+    "include": [
+        "src/**/*",
+        "test/**/*",
+        "__*__/**/*"
+    ],
+    "exclude": [
+        "test/types/**/*"
+    ]
+}
