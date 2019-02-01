@@ -7,8 +7,12 @@
   "main": "index.js",
   "workspaces": [
     "packages/*",
-    "examples/*"
+    "examples/*",
+    "scripts"
   ],
+  "scripts": {
+    "lint": "node scripts/find-duplicated"
+  },
   "devDependencies": {
     "@types/node": "^10.12.18",
     "lerna": "^3.4.0",
