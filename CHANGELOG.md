@@ -1,6 +1,20 @@
 
 # CHANGELOG
 
+## 1.0.0-alpha.3 (2019-02-01)
+
+### Features
+
+* Updated outdated dependencies
+* **with-tslint**: Add `dtslint` to run type tests
+* **conf-jest**: Add `moduleNameMapper` to import `@src/*` from integration tests
+
+### Bug Fixes
+
+* **conf-webpack**: Fix webpack config for AutoDll to inherit `mode` and `context` on `vendor` bundle
+* **with-jest-enzyme**: Fix that `jest-enzyme` is missing
+
+
 ## 1.0.0-alpha.2 (2019-01-15)
 
 ### Bug Fixes
