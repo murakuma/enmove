@@ -25,7 +25,7 @@
     "autodll-webpack-plugin": "^0.4.2",
     "css-hot-loader": "^1.4.3",
     "css-loader": "^2.1.0",
-    "dotenv-webpack": "^1.6.0",
+    "dotenv-webpack": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "lodash.compact": "^3.0.1",
     "lodash.difference": "^4.5.0",
@@ -39,20 +39,20 @@
     "typings-for-css-modules-loader": "^1.7.0"
   },
   "devDependencies": {
-    "@types/dotenv-webpack": "^1.5.0",
+    "@types/dotenv-webpack": "^1.7.0",
     "@types/html-webpack-plugin": "^3.2.0",
     "@types/lodash.compact": "^3.0.4",
     "@types/lodash.difference": "^4.5.4",
     "@types/lodash.keys": "^4.2.4",
     "@types/mini-css-extract-plugin": "^0.2.0",
     "@types/minimist": "^1.2.0",
-    "@types/webpack": "^4.4.22",
+    "@types/webpack": "^4.4.24",
     "@types/webpack-dev-server": "^3.1.1",
     "run-bin": "^1.0.1"
   },
   "optionalDependencies": {
-    "typescript": "^3.2.2",
-    "webpack": "^4.28.1"
+    "typescript": "^3.3.1",
+    "webpack": "^4.29.0"
   },
   "publishConfig": {
     "access": "public"

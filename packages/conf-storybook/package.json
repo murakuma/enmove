@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "@enmove/conf-webpack": "^1.0.0-alpha.2",
-    "@storybook/addon-info": "^4.1.6",
-    "@storybook/react": "^4.1.6",
+    "@storybook/addon-info": "^4.1.11",
+    "@storybook/react": "^4.1.11",
     "@types/storybook__react": "^4.0.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0"
   },
@@ -37,7 +37,7 @@
     "babel-loader": "^8.0.5",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "webpack": "^4.28.4"
+    "webpack": "^4.29.0"
   },
   "publishConfig": {
     "access": "public"

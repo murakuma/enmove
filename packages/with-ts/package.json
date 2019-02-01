@@ -10,7 +10,7 @@
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
     "@enmove/conf-ts": "^1.0.0-alpha.2",
-    "typescript": "^3.2.2"
+    "typescript": "^3.3.1"
   },
   "publishConfig": {
     "access": "public"

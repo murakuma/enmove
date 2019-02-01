@@ -10,7 +10,7 @@
   "author": "murakuma <murakuma44@gmail.com>",
   "dependencies": {
     "@enmove/conf-jest": "^1.0.0-alpha.2",
-    "@types/jest": "^23.3.12",
+    "@types/jest": "^23.3.13",
     "jest": "^24.0.0",
     "ts-jest": "^23.10.5"
   },

@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@types/electron": "^1.6.10",
-    "electron": "^4.0.1"
+    "electron": "^4.0.3"
   },
   "devDependencies": {
     "run-bin": "^1.0.1"
