@@ -11,7 +11,7 @@
     "scripts"
   ],
   "scripts": {
-    "lint": "node scripts/find-duplicated"
+    "lint": "node scripts/find-duplicated-deps"
   },
   "devDependencies": {
     "@types/node": "^10.12.21",

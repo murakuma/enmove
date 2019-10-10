@@ -1,7 +1,7 @@
 
 # scripts
 
-## `find-duplicated`
+## `find-duplicated-deps`
 
 > Searchs all sub-packages and checks if any sub-packages has duplicated dependencies.
 
@@ -15,7 +15,7 @@ If one or more sub-packages have some duplicated dependencies, then check the ve
 
 ```sh
 # Check to see if any duplicated dependencies found
-$ node scripts/find-duplicated
+$ node scripts/find-duplicated-deps
 
 # Check outdated dependencies and upgrade if necessary
 $ yarn upgrade-interactive --latest

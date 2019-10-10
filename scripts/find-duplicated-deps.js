@@ -12,7 +12,7 @@ const log = console.log.bind( console );
 
 let hasProblem = false;
 
-log( "=== find-duplicated ===" );
+log( "=== find-duplicated-deps ===" );
 log();
 
 for ( const package of packages ) {
@@ -46,6 +46,7 @@ for ( const package of packages ) {
 }
 
 log();
-log( `${packages.length} packages searched.` );
+log( `${packages.length} packages have been searched.` );
+log();
 
 process.exitCode = hasProblem ? 1 : 0;
