@@ -3,13 +3,19 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 
-// tslint:disable-next-line:no-var-requires
-const { Button } = require("@storybook/react/demo");
+import Counter from "@src/components/Counter";
 
-storiesOf( "Button", module )
-    .add( "with text", () => (
-        <Button>Hello Button</Button>
+storiesOf( "Counter", module )
+    .add( "Default", () => (
+        <Counter />
     ) )
-    .add( "with some emoji", () => (
-        <Button><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
+    .add( "Custom initial value", () => (
+        <Counter initialValue={42} />
+    ) )
+    .add( "Custom Min/Max", () => (
+        <Counter minValue={5} maxValue={10} />
+    ) )
+    .add( "onUpdate()", () => (
+        // tslint:disable-next-line: jsx-no-lambda
+        <Counter onUpdate={value => console.log( "[OnUpdate] Current value: " + value )} />
     ) );

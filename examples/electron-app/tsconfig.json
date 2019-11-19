@@ -1,5 +1,9 @@
 {
     "extends": "@enmove/conf-ts/dom",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": { "@src/*": ["src/*"] }
+    },
     "include": [
         "src/**/*",
         "stories/**/*",

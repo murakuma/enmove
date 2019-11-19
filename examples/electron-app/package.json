@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "fs-extra": "^7.0.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@enmove/for-electron": "^1.0.0-alpha.3",

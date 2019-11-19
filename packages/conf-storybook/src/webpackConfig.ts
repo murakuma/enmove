@@ -24,8 +24,16 @@ function webpackConfig(
         findModuleRule( enmoveRules, "foo.scss" )!,
     );
 
-    // Add resolve extensions
-    config.resolve!.extensions!.push( ".ts", ".tsx" );
+    // Add extensions for TypeScript
+    const resolve = config.resolve!;
+    resolve.extensions!.push( ".ts", ".tsx" );
+
+    // Add alias for `@src`
+    const alias = resolve.alias || {};
+    resolve.alias = Object.assign( {},
+        alias,
+        enmoveConfig.resolve!.alias,
+    );
 
     // Add plugins
     config.plugins!.push(

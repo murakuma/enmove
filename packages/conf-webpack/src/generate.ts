@@ -39,6 +39,9 @@ export const generate = ( {
 
     resolve: {
         extensions: [ ".js", ".json", ".ts", ".tsx" ],
+        alias: {
+            "@src": resolve( rootDir, "src" ),
+        },
     },
 
     module: {
