@@ -1,0 +1,13 @@
+
+@import "./common";
+
+.counter-container {
+    padding: $padding;
+    background-color: rgb(50, 106, 179);
+    color: #fff;
+}
+
+.button {
+    padding: $padding * 2;
+    margin-right: $padding;
+}

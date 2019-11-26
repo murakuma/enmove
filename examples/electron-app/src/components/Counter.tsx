@@ -4,6 +4,8 @@ import React, {
     useState,
 } from "react";
 
+import s from "../styles/Counter.scss";
+
 interface Props {
     initialValue?: number;
     minValue?: number;
@@ -36,10 +38,10 @@ const Counter: React.SFC<Props> = ({
     const handleDecrement = useCallback( () => addValue( -1 ), [addValue] );
 
     return (
-        <div>
+        <div className={s.counterContainer}>
             <p>Current value: {value}</p>
-            <button onClick={handleIncrement}>+</button>
-            <button onClick={handleDecrement}>-</button>
+            <button onClick={handleIncrement} className={s.button}>+</button>
+            <button onClick={handleDecrement} className={s.button}>-</button>
         </div>
     );
 };

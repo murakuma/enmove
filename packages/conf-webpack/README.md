@@ -7,7 +7,7 @@
 
 - TypeScript loader
 - css-module support
-- SASS support with TS declaration generation (by `typings-for-css-modules-loader`)
+- SASS support along with TS declaration generation
 - Compatible with `webpack-dev-server`
 - Automatically generates `vendor.js` for external packages, which is barely changed
 
